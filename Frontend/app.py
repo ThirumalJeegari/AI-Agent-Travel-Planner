@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-BACKEND_URL = "https://your-render-backend.onrender.com"
+BACKEND_URL = "https://ai-agent-travel-planner.onrender.com"
 
 st.set_page_config(
     page_title="AI Travel Planner",
