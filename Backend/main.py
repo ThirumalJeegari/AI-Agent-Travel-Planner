@@ -1,10 +1,8 @@
 import os
 import requests
-
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from pydantic import BaseModel
-
 from langchain_core.tools import tool
 from langchain_groq import ChatGroq
 from langchain.agents import AgentExecutor, create_tool_calling_agent

@@ -1,11 +1,9 @@
-fastapi
-uvicorn
-streamlit
-requests
-python-dotenv
+fastapi==0.115.0
+uvicorn==0.30.6
+requests==2.32.3
+python-dotenv==1.0.1
+pydantic==2.9.2
 
-langchain
-langchain-core
-langchain-groq
-
-pydantic
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-groq==0.1.10
