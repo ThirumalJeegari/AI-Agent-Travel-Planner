@@ -59,15 +59,19 @@ if st.button("Generate Travel Plan"):
 
             if "response" in result:
 
-                st.success("Travel Plan Ready")
+                st.subheader("🌤 Weather")
 
-                st.markdown(result["response"])
+                weather = result["weather"]
+                st.write(f"Temperature: {weather['temperature']} °C")
+                st.write(f"Condition: {weather['condition']}")
 
-                st.subheader("Weather")
-                st.write(result["weather"])
+                st.subheader("💰 Budget Breakdown")
 
-                st.subheader("Budget Breakdown")
-                st.json(result["budget_breakdown"])
+                budget = result["budget_breakdown"]
+                st.write(f"🏨 Hotel: ₹{budget['hotel']}")
+                st.write(f"🍽 Food: ₹{budget['food']}")
+                st.write(f"🚕 Transport: ₹{budget['transport']}")
+                st.write(f"🎯 Activities: ₹{budget['activities']}")
 
             else:
                 st.error(result.get("error", "Unknown Error"))
