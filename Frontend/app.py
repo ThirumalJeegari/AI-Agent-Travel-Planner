@@ -3,11 +3,6 @@ import requests
 
 BACKEND_URL = "https://ai-agent-travel-planner.onrender.com"
 
-st.set_page_config(
-    page_title="AI Travel Planner",
-    page_icon="✈️",
-    layout="wide"
-)
 
 st.title("✈️ AI Travel Planner")
 
