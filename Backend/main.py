@@ -40,8 +40,7 @@ class TravelRequest(BaseModel):
 
 
 @tool
-def get_weather(place: str) -> str:
-    """Get live weather for a place."""
+def get_weather(place: str):
 
     url = (f"https://api.openweathermap.org/data/2.5/weather"f"?q={place}"f"&appid={OPENWEATHER_API_KEY}"f"&units=metric")
 
